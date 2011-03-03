@@ -12,13 +12,11 @@
 #include <stdio.h>
 #include <string.h>
 
-#include <elrob/Emacros.h>
+#include <libelrob/Emacros.h>
+#include <libelrob/Etools.h>
+
 #include "nav420.h"
 #include "nav420_tools.h"
-#include <elrob/gps-nmea.h>
-#include <elrob/libgps.h>
-#include <elrob/Etime.h>
-#include <elrob/Etools.h>
 
 #ifndef SQR
 #define SQR(a) ((a)*(a))

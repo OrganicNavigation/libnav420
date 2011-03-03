@@ -12,8 +12,10 @@
 #define NAV420_TOOLS_H
 
 #include <linux/types.h>
-#include "nav420_struct.h"
-#include <elrob/gps-nmea.h>
+
+#include <libelrob/gps-nmea.h>
+
+#include "nav420.h"
 
 #define DMU_HEADER_CHAR 'U'
 #define DMU_CHK_HEAD(raw)     (((raw)[0] == DMU_HEADER_CHAR) && \

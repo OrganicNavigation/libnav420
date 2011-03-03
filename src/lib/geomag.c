@@ -42,8 +42,10 @@
 /* Comment out one of the two following lines, as applicable */
 #include <math.h>               /* for gcc */
 #include <time.h>
-#include "nav420_struct.h"
-#include <elrob/Emacros.h>
+
+#include <libelrob/Emacros.h>
+
+#include "nav420.h"
 
 #define NaN log(-1.0)
 

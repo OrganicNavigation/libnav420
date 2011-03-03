@@ -16,13 +16,15 @@
 #include <pthread.h>
 #include <unistd.h>
 
+#include <libelrob/Etime.h>
+#include <libelrob/Emacros.h>
+
+#include <libelrob/gps.h>
+#include <libelrob/gps-nmea.h>
+#include <libelrob/serial.h>
+
 #include "nav420.h"
-#include <elrob/libgps.h>
-#include <elrob/gps-nmea.h>
-#include "nav420_lib.h"
-#include <elrob/serial_easy.h>
-#include <elrob/Etime.h>
-#include <elrob/Emacros.h>
+#include "nav420_tools.h"
 
 typedef struct _DMU_ThreadParams{
   int baudrate_nav420;
@@ -101,7 +103,7 @@ void DMU_DBG(const char *format, ...)
     fprintf(stdout,"%s :%i: ", ptr+1, __LINE__);
   else
     fprintf(stdout,":%i: ", __LINE__);
-  fprintf(stdout,p);
+  fprint(stdout,p);
 }
 
 void DMU_PRINT(const char *format, ...)
@@ -114,7 +116,7 @@ void DMU_PRINT(const char *format, ...)
   vsprintf(p, format, ap);
   va_end(ap);
 
-  if(ostrm != NULL) fprintf(ostrm,p);
+  if(ostrm != NULL) fprint(ostrm,p);
 }
 
 /* ---  Setter and getter functions */
