@@ -1,0 +1,30 @@
+libnav420 (0.1-5) unstable; urgency=low
+
+  * Added changelog
+
+ -- Ralf Kaestner <ralf.kaestner@gmail.com>  Fri, 26 Jul 2013 09:26:00 +0100
+
+libnav420 (0.1-4) unstable; urgency=low
+
+  * Fixed linking bug
+
+ -- Ralf Kaestner <ralf.kaestner@gmail.com>  Thu, 03 Mar 2011 09:25:41 +0100
+
+libnav420 (0.1-3) unstable; urgency=low
+
+  * ReMake build system port
+
+ -- Ralf Kaestner <ralf.kaestner@gmail.com>  Thu, 03 Mar 2011 09:23:45 +0100
+
+libnav420 (0.1) unstable; urgency=low
+
+    * Replaced elrob with smart from directories.
+    * Started refactoring directories.
+
+ -- Dizan Vasquez <dichodaemon@gmail.com>  Tue, 25 Aug 2009 16:19:05 +0200
+
+libnav420 (0.1) unstable; urgency=low
+
+    * removed doc/.files directory
+
+ -- Dizan Vasquez <dichodaemon@gmail.com>  Thu, 17 Jul 2008 17:23:52 +0200
