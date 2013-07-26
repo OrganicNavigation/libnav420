@@ -1,16 +1,23 @@
 libnav420 (0.1-5) unstable; urgency=low
 
+  * Added pkg-config file
+  * Release distribution
+
+ -- Ralf Kaestner <ralf.kaestner@gmail.com>  Fri, 26 Jul 2013 09:30:00 +0100
+
+libnav420 (0.1-4) unstable; urgency=low
+
   * Added changelog
 
  -- Ralf Kaestner <ralf.kaestner@gmail.com>  Fri, 26 Jul 2013 09:26:00 +0100
 
-libnav420 (0.1-4) unstable; urgency=low
+libnav420 (0.1-3) unstable; urgency=low
 
   * Fixed linking bug
 
  -- Ralf Kaestner <ralf.kaestner@gmail.com>  Thu, 03 Mar 2011 09:25:41 +0100
 
-libnav420 (0.1-3) unstable; urgency=low
+libnav420 (0.1-2) unstable; urgency=low
 
   * ReMake build system port
 

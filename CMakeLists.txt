@@ -10,7 +10,7 @@ remake_project(
   AUTHOR "Pierre Lamon"
   AUTHOR "Ralf Kaestner"
   CONTACT "ralf.kaestner@gmail.com"
-  HOME "http://aslforge.ethz.ch/projects/libnav420"
+  HOME "http://github.com/kralf/libnav420"
   LICENSE "GNU Lesser General Public License (LGPL)"
   PREFIX nav420-
   INSTALL /usr
@@ -21,15 +21,30 @@ remake_doc(
 )
 
 remake_pack_deb(
-  libnav420 libelrob
+  DEPENDS libelrob
 )
 remake_pack_deb(
   COMPONENT dev
   DESCRIPTION "development headers"
-  libnav420 libelrob-dev
+  DEPENDS libnav420 libelrob-dev
 )
 remake_pack_deb(
   ARCH all
   COMPONENT doc
   DESCRIPTION "documentation"
+)
+
+remake_distribute_deb(
+  DISTRIBUTION lucid
+  SECTION libs
+  UPLOAD ppa:kralf/asl
+  DEPENDS libelrob-dev remake pkg-config doxygen
+  PASS CMAKE_BUILD_TYPE LIBNAV420_GIT_REVISION
+)
+remake_distribute_deb(
+  DISTRIBUTION precise
+  SECTION libs
+  UPLOAD ppa:kralf/asl
+  DEPENDS libelrob-dev remake pkg-config doxygen
+  PASS CMAKE_BUILD_TYPE LIBNAV420_GIT_REVISION
 )
